@@ -257,7 +257,7 @@
 
                 <br>&nbsp;
 
-                <!-- CONTACTo -->
+                <!-- CONTACTO -->
                 <a class="anchor" id="contacto"></a>
                 <section class="bg-light py-5">
                     <div class="container">
@@ -267,21 +267,35 @@
                                 <p>
                                     Tenes alguna consulta? Escribinos!
                                 </p>
+                                {% if success %}
+                                <p>Gracias por tu mensaje! Te contestamos en la brevedad.</p>
 
-                            </div>
-                            <div class="col-lg-3 align-self-start">
-                                <img src="../static/img/Logo.png" alt="Logo La Resi">
-                                <div class="d-flex flex-row justify-content-sart">
-                                    <div class="p-4">
-                                        <p>Direccion: 27 de Abril 928
-                                            <a href="tel:+5493517621017">Tel/Whatsapp: +5493517621017 </a>
-                                        </p>
+                                {% else %} {% for message in form.name.errors %}
+                                <div class="flash">{{ message }}</div>
+                                {% endfor %} {% for message in form.email.errors %}
+                                <div class="flash">{{ message }}</div>
+                                {% endfor %} {% for message in form.subject.errors %}
+                                <div class="flash">{{ message }}</div>
+                                {% endfor %} {% for message in form.message.errors %}
+                                <div class="flash">{{ message }}</div>
+                                {% endfor %}
+
+                                <form action="{{ url_for('home') }}" method=post>
+                                    {{ form.hidden_tag() }} {{ form.name.label }} {{ form.name }} {{ form.email.label }} {{ form.email }} {{ form.subject.label }} {{ form.subject }} {{ form.message.label }} {{ form.message }} {{ form.submit }}
+                                </form>
+                                <div class="col-lg-3 align-self-start">
+                                    <img src="../static/img/Logo.png" alt="Logo La Resi">
+                                    <div class="d-flex flex-row justify-content-sart">
+                                        <div class="p-4">
+                                            <p>Direccion: 27 de Abril 928
+                                                <a href="tel:+5493517621017">Tel/Whatsapp: +5493517621017 </a>
+                                            </p>
+
+                                        </div>
 
                                     </div>
-
                                 </div>
                             </div>
-                        </div>
 
                 </section>
 
@@ -307,4 +321,4 @@
 
                 </html>
 
-                {% endblock %}
+                {% endif %} {% endblock %}
