@@ -1,0 +1,310 @@
+{% extends "layout.html" %} {% block content %}
+
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="background-overlay text-white py-10">
+
+    </div>
+</header>
+<!-- NEWSLETTER  -->
+<section id="newsletter" class="bg-dark text-black py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" class="form-control form-control-lg" placeholder="Escribe tu nombre">
+            </div>
+            <div class="col-md-4">
+                <input type="email" class="form-control form-control-lg" placeholder="e-mail">
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-warning btn-lg btn-block">
+                    Quiero mas informacion
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>&nbsp;
+
+
+<!-- NOSOTROS -->
+<a class="anchor" id="nosotros"></a>
+<section class="m5 text-center bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="m-4">
+                <h3>Nosotros</h3>
+                <br>
+                <section class="container text-center p-2">
+                    <div class="row">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            ¿Que es La Resi?
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        La Resi es una residencia estudiantil que posee habitaciones compartidas de baño privado en la ciudad de Córdoba, Argentina. Estos no son apartamentos, y solo están disponibles para estudiantes. Si usted es un estudiante que vivirá en Córdoba puede hospedarse
+                                        con nosotros. La Resi ofrece alojamiento solo en un sistema basado en estadias minimas hasta Diciembre. </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            ¿Quien puede vivir en La Resi?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Para ser elegible para vivir con nosotros, los residentes deben poder certificar (a) que él / ella está actualmente matriculado como estudiante y está tomando uno o más cursos, o (b) si el solicitante no está tomando clases durante el semestre , el solicitante
+                                        (i) está registrado para tomar clases en el siguiente semestre y (ii) está trabajando en una pasantía que proporciona un aprendizaje beneficioso. Pueden estar cursando carreras universitarias, terciarios, otros
+                                        cursos o estar en Córdoba por intercambios estudiantiles. </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            ¿Que incluye la tarifa?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        La tarifa de la habitación corresponde a una habitación básica amueblada al estilo de los estudiantes (cama individual, escritorio, armario individual), TV por cable en espacios de uso común ( televisores de pantalla plana con un paquete de cable premium),
+                                        Wifi en todo el edificio, lavarropas de uso común, camaras de seguridad, cocina equipada (microondas, heladera, horno, vajilla de uso común, lockers individuales para guardar alimentos). Servicio de emergencia medica
+                                        a domicilio como así también consulta médica gratuita.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Tengo una habitacion disponible para alquilar, la puedo publicar en su
+                                            sitio?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        No, La Resi no es una agencia. Administra habitaciones compartidas de baño privado para estudiantes en una residencia ubicada en Cordoba Argentina.</div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                ¿Puedo hospedarme por unos dias o algunos meses?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            No, pero dependiendo para cuando estes buscando alojamiento es la cantidad de meses minimos que deberas permanecer en la residencia estudiantil ya que las estadias minimas son hasta el mes de Diciembre inclusive del respectivo año. </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingSix">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                    ¿Cuanto cuesta vivir en la Resi?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                La Resi tiene varios tipos de habitaciones diferentes todas son compartidas, algunas tienen baño privado y otras compartido. Según las características de la habitación será el precio, por lo que contactarse con nosotros es la mejor manera de averiguar
+                                                qué funciona mejor para sus necesidades y presupuesto. Se puede contactar por medio de la página o enviando un Whatsapp a nuestro teléfono +5493517621017. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </section>
+
+                <br>&nbsp;
+
+
+                <!-- GALERIA -->
+                <a class="anchor" id="fotos"></a>
+                <section class="m4 text-center bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="m-2">
+                                <h3>Fotos</h3>
+
+                                <div class="img-area">
+                                    <div class="single-img"><img src="../static/img/La Resi- Residencia estudiantil- cocina.jpg" alt="Residencia estudiantil cocina"></div>
+                                    <div class="single-img"><img src="../static/img/La Resi- Residencia estudiantil- pasillo.jpg" alt="Residencia estudiantil pasillo"></div>
+                                    <div class="single-img"><img src="../static/img/La Resi- Residencia estudiantil-habitacion (2).jpg" alt="Residencia estudiantil habitacion"></div>
+                                    <div class="single-img"><img src="../static/img/La Resi- Residencia estudiantil-habitacion.jpg" alt="Residencia estudiantil habitacion1"></div>
+                                    <div class="single-img"><img src="../static/img/La Resi- Residencia estudiantil-Patio.jpg" alt="Residencia estudiantil patio"></div>
+                                    <div class="single-img"><img src="../static/img/La Resi- Residencia estudiantil-sala de estudio.jpg" alt="Residencia estudiantil sala de"></div>
+
+                                </div>
+
+                </section>
+
+                <br>&nbsp;
+
+                <!-- RESEÑA -->
+                <a class="anchor" id="reseña"></a>
+                <section class="text-center team">
+                    <div class="container p-5">
+                        <h1 class="text-center text-white">Reseñas</h1>
+                        <p class="text-white">
+                            Ellos te cuentan que opinan de nuestra residencia
+                        </p>
+                        <div class="row">
+                            <!-- USER TEAM -->
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Camila Pastorizzo</h3>
+                                        <p>
+                                            “Hermoso y confortable lugar, cuenta con muchos espacios para estudiar y estar cómodo/a en todo aspecto, lo super recomiendo para vivir por las buenas modalidades que cuenta el lugar y sus características que la hacen única”
+                                        </p>
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Nicolas Mazzoni</h3>
+                                        <p>
+                                            "Buena zona donde vivir, muy tranquila para realizar tus estudios y con gente copada"
+                                        </p>
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Agostina Pereyra</h3>
+                                        <p>
+                                            "Es un lugar excelente para vivir con muy buen precio, excelente atención, comodidad, cerca de todo y muy buen ambiente de estudio y compañerismo"
+                                        </p>
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Fabricio Diaz</h3>
+                                        <p>
+                                            “ Excelente lugar para poder vivir, estudiar y conocer personas de todas partes de Argentina y del mundo! Se aprende a convivir y entender otros puntos de vista. Muy buena atención ☺ ”
+                                        </p>
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <br>&nbsp;
+
+                <!-- CONTACTo -->
+                <a class="anchor" id="contacto"></a>
+                <section class="bg-light py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h3>Contacto</h3>
+                                <p>
+                                    Tenes alguna consulta? Escribinos!
+                                </p>
+
+                            </div>
+                            <div class="col-lg-3 align-self-start">
+                                <img src="../static/img/Logo.png" alt="Logo La Resi">
+                                <div class="d-flex flex-row justify-content-sart">
+                                    <div class="p-4">
+                                        <p>Direccion: 27 de Abril 928
+                                            <a href="tel:+5493517621017">Tel/Whatsapp: +5493517621017 </a>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+
+                <br>&nbsp;
+
+                <footer>
+                    <div class="container p-3">
+                        <div class="row text-center text-white">
+                            <div class="col ml-auto">
+                                <p>Copyright &copy; 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <!-- BOOTSTRAP SCRIPTS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+                </body>
+
+
+
+                </html>
+
+                {% endblock %}
