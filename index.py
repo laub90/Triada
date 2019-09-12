@@ -26,8 +26,8 @@ def home():
             msg = Message(form.subject.data, sender='contact@example.com', recipients=[
                           'laresidenciacordoba@gmail.com'])
             msg.body = """
-            From: %s <%s>
-            %s
+            From: %s &lt;%s&gt;
+      %s
             """ % (form.name.data, form.email.data, form.message.data)
             mail.send(msg)
             return render_template('home.html', success=True)
