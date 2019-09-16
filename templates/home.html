@@ -328,6 +328,9 @@
                 <form action="{{ url_for('home') }}" method=post>
                     {{ form.hidden_tag() }} {{ form.name.label }} {{ form.name }} {{ form.email.label }} {{ form.email }} {{ form.subject.label }} {{ form.subject }} {{ form.message.label }} {{ form.message }} {{ form.submit }}
                 </form>
+
+                {% endif %}
+
                 <div class="col-lg-3 align-self-start">
                     <img src="../static/img/Logo.png" alt="Logo La Resi">
                     <div class="d-flex flex-row justify-content-sart">
@@ -365,5 +368,3 @@
 
 
 </html>
-
-{% endif %} {% endblock %}
