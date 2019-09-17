@@ -1,6 +1,12 @@
 from flask import Flask, render_template, flash, redirect, request
 from forms import ContactForm
 from flask_mail import Mail, Message
+import os
+from urllib2 import Request, urlopen
+
+request = Request('https://realemail.expeditedaddons.com/?api_key=' + os.environ['REALEMAIL_API_KEY'] + '&email=email%40example.org&fix_typos=false')
+response_body = urlopen(request).read()
+print response_body
 
 app = Flask(__name__)
 mail = Mail()
