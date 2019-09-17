@@ -1,7 +1,11 @@
 from flask import Flask, render_template, flash, redirect, request
 from forms import ContactForm
 from flask_mail import Mail, Message
+import os
+import urllib.request 
 
+x = urllib.request.urlopen('https://realemail.expeditedaddons.com/?api_key=TMF4RPB9I07GNH3K1L65XD10U5W2988YJ67OSZ43EVQA2C&email=email%40example.org&fix_typos=false')
+print (x.read())
 
 app = Flask(__name__)
 mail = Mail()
