@@ -8,8 +8,9 @@
 }
 
 .main-header {
-    position: relative;
-    background: url(../img/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/background.jpg);
     background-size: cover;
     min-height: 700px
 }
