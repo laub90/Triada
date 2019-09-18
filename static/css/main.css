@@ -11,7 +11,7 @@
     position: relative;
     background: url(../img/background.jpg);
     background-size: cover;
-    min-height: 700px
+    min-height: 650px
 }
 
 .img-area {
@@ -67,7 +67,7 @@ form input#subject {
 }
 
 form textarea#message {
-    width: 500px;
+    width: 400px;
     height: 100px;
     background-color: #fafafa;
     -webkit-border-radius: 10px;
@@ -87,7 +87,7 @@ form input#submit {
     border: 1px solid #d8d8d8;
     padding: 10px;
     font-weight: lighter;
-    text-align: center;
+    text-align: justify;
     color: #000000;
     background-color: #f4f4f4;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #e5e5e5));

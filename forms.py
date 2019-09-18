@@ -4,10 +4,10 @@ from wtforms.validators import DataRequired, ValidationError, Email
 
 
 class ContactForm(FlaskForm):
-    name = StringField('Nombre', validators=[DataRequired(message= "Please enter your name")])
-    email = TextField('Email', validators=[DataRequired(message= "Please enter your email")])
-    subject = TextField('Asunto', validators=[DataRequired(message= "Please enter your Asunto")])
-    message = TextAreaField('Mensaje', validators=[DataRequired(message= "Please enter your mensaje")])
+    name = StringField('Nombre', validators=[DataRequired(message= "Ingresa tu nombre")])
+    email = TextField('Email', validators=[DataRequired(message= "Ingresa tu email")])
+    subject = TextField('Celular/ Whatsapp', validators=[DataRequired(message= "Ingresa tu telefono")])
+    message = TextAreaField('Mensaje', validators=[DataRequired(message= "Ingresa tu mensaje")])
     submit = SubmitField('Enviar')
 
     
