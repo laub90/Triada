@@ -11,7 +11,7 @@
     position: relative;
     background: url(../img/background.jpg);
     background-size: cover;
-    min-height: 650px
+    min-height: 700px
 }
 
 .img-area {
@@ -58,9 +58,9 @@ form input#email,
 form input#subject {
     width: 400px;
     background-color: #fafafa;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
     border: 1px solid #cccccc;
     padding: 2px;
     font-size: 1.1em;
@@ -68,11 +68,11 @@ form input#subject {
 
 form textarea#message {
     width: 400px;
-    height: 100px;
+    height: 60px;
     background-color: #fafafa;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
     border: 1px solid #cccccc;
     margin-bottom: 2px;
     padding: 2px;
@@ -81,9 +81,10 @@ form textarea#message {
 
 form input#submit {
     display: block;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    margin: auto;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
     border: 1px solid #d8d8d8;
     padding: 10px;
     font-weight: lighter;

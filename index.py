@@ -39,18 +39,7 @@ def home():
     elif request.method == 'GET':
         return render_template('home.html', form=form)
     
-@app.route('/nosotros')
-def nosotros():
-    return render_template('nosotros.html')
 
-@app.route('/fotos')
-def fotos():
-    return render_template('fotos.html')
-
-
-@app.route('/contacto')
-def  contacto():
-    return render_template('contacto.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
