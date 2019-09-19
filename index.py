@@ -10,9 +10,10 @@ app.secret_key = 'development key'
 
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
+app.config["MAIL_USE_TLS"] = False
 app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = 'laresidenciacordoba@gmail.com'
-app.config["MAIL_PASSWORD"] = 'Amorsalud100000'
+app.config["MAIL_USERNAME"] = 'lauriborra@gmail.com'
+app.config["MAIL_PASSWORD"] = 'buenasdecisiones'
 
 mail.init_app(app)
 
@@ -25,10 +26,10 @@ def home():
             return render_template('home.html', form=form)
         else:
             msg = Message(form.subject.data, sender='contact@example.com', recipients=[
-                          'laresidenciacordoba@gmail.com'])
+                          'lauriborra@gmail.com'])
             msg.body = """
             From: %s &lt;%s&gt;
-      %s
+             %s
             """ % (form.name.data, form.email.data, form.message.data)
             mail.send(msg)
             return render_template('home.html', success=True)
