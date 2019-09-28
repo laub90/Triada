@@ -4,7 +4,8 @@
 }
 
 .navbar .nav-item .nav-link {
-    color: #263B7D;
+    image-resolution: 50px;
+    color: #3688A7;
 }
 
 .main-header {
@@ -41,7 +42,7 @@ a.anchor {
 
 .team,
 footer {
-    background: #263B7D;
+    background: #3688A7;
 }
 
 
